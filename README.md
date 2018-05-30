@@ -39,6 +39,7 @@ document.getElementById("result").innerHTML=event.data;
 };
 ```
 当 web worker 传递消息时，会执行事件监听器中的代码。event.data 中存有来自 event.data 的数据。
+
 向 web worker 添加一个 "postMessage" 信息发送事件：
 ```JavaScript
  var obj;
