@@ -40,6 +40,12 @@ document.getElementById("result").innerHTML=event.data;
 ```
 当 web worker 传递消息时，会执行事件监听器中的代码。event.data 中存有来自 event.data 的数据。
 
+向 web worker 添加一个 "postMessage" 信息发送事件：
+```JavaScript
+ var obj;
+ w.postMessage(obj)
+```
+
 ## 终止 Web Worker
 当我们创建 web worker 对象后，它会继续监听消息（即使在外部脚本完成之后）直到其被终止为止。
 如需终止 web worker，并释放浏览器/计算机资源，请使用 terminate() 方法：
